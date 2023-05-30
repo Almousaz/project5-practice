@@ -1,0 +1,387 @@
+
+{
+
+  font-family: "roboto", sans-serif ;
+  
+  margin :0px;
+  
+  
+  }
+  
+  ::selection {
+  
+  color: blue;
+  
+  background: yellow;
+  
+  }
+  
+  p::first-letter {
+  
+  color: #ff0000;
+  
+  font-size: xx-large;
+  
+  }
+  
+  
+  p::first-line {
+  
+  color: #0000ff;
+  
+  font-variant: small-caps;
+  
+  }
+  
+  
+  /* unvisited link */
+  
+  a:link {
+  
+  color: rgb(53, 3, 189);
+  
+  }
+  
+  
+  /* visited link */
+  
+  a:visited {
+  
+  color: green;
+  
+  }
+  
+  
+  /* mouse over link */
+  
+  a:hover {
+  
+  color: hotpink;
+  
+  }
+  
+  
+  /* selected link */
+  
+  a:active {
+  
+  color: blue;
+  
+  }
+  
+  
+  /* EXAMPLE 1 - :hover */
+  
+  .hover-example {
+  
+  width: 200px;
+  
+  border-radius: 25px;
+  
+  font-family: 'Courier New, Courier, monospace;
+  
+  font-size: 1.2rem;
+  
+  font-weight: 400;
+  
+  border: 2px solid rgb(98, 117, 117);
+  
+  background: transparent;
+  
+  color: rgb(98, 117, 117);
+  
+  padding: 0.75rem;
+  
+  cursor: pointer;
+  
+  transition: all 0.5s ease-out;
+  
+  }
+  
+  
+  .hover-example:hover {
+  
+  border-color: rgb(70, 130, 180);
+  
+  background: steelblue;
+  
+  color: rgb(11, 32, 32);
+  
+  font-weight: 600;
+  
+  transition: all 0.5s ease-out;
+  
+  }
+  
+  
+  .wrapper {
+  
+  width: min(100% - 2rem, 1200px);
+  
+  margin-inline: auto;
+  
+  }
+  
+  
+  .grid-container {
+  
+  display: grid;
+  
+  min-height: 60vh;
+  
+  /*grid-template-columns: 1fr 1fr 1fr;
+  
+  grid-template-rows: repeat(5, 1fr); */
+  
+  grid-auto-flow:column;
+  
+  margin-top: 5rem;
+  
+  gap: 1rem;
+  
+  }
+  
+  
+  .grid-item {
+  
+  padding: 1rem;
+  
+  font-size: 2rem;
+  
+  background-color: cornflowerblue;
+  
+  }
+  
+  
+  .item-4, .item-6 {
+  
+  grid-row: 2/4;
+  
+  }
+  
+  
+  .item-4 {
+  
+  grid-column: 1/2;
+  
+  }
+  
+  
+  .item-5 {
+  
+  grid-row: span 2;
+  
+  }
+  
+  
+  .item-6 {
+  
+  grid-column: 3/4;
+  
+  }
+  
+  
+  div.center {
+  
+  
+  text-align: center;
+  
+  
+  }
+  
+  
+  body{
+  border:15px solid lightgray ; 
+  padding :10px;
+  margin :5px;
+  
+  }
+  
+  
+    #img1 { 
+    display: inline;
+    float: right;
+    padding: 5px;
+    border-style: double;
+  }
+  
+          header {
+  
+  text-align: center;
+  
+  background-color: rgb(58, 190, 219) ;
+  
+  border: solid black 2px;
+  
+  box-shadow: 10px 10px;
+  
+  padding: 20px;
+  
+  margin:2em ;
+  
+  color:#37306B;
+  
+  }
+  
+  
+  section {
+  
+  background-color: rgba(225, 221, 221, 0.529);
+  
+  padding :1rem;
+  
+  margin: 20px;
+  
+  text-indent: 30px;
+  
+  border-radius: 20px;
+  
+  
+  }
+  
+  
+  h2{
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 10px;
+  font-size: 30px;
+  color: rgb(26,48,66);
+  
+  }
+  
+  
+    /* .main {
+        display: grid;
+        grid-column-gap: 5rem;
+        align-items: center;
+        background-color: antiquewhite;
+        grid-template-columns: 1fr 1fr 1fr ;
+      }
+  
+      .main img {
+        width: 300px;
+        height: 300px;
+        border-radius: 1rem;
+      } */
+  
+  footer {
+  
+  
+      border: solid black 1px;
+      margin: 10px;
+      padding: 10px;
+      color: rgba(2, 2, 2, 0.867);
+      background-color: rgb(58, 117, 156);
+  
+  }
+  
+  
+  .contactme{
+  
+  margin: auto;
+  
+  max-width: 300px;
+  
+  padding: 10px;
+  
+  
+  }
+  
+  
+  @media (max-width: 770px) {
+  
+  .container {
+  
+  background-color:lightblue;
+  
+  align-items: center;
+  
+  gap: 1.5rem;
+  
+  }
+  
+  .heading{
+  
+  font-size: 2rem;
+  
+  max-width: 25ch;
+  
+  margin-bottom: 2rem;
+  
+  }
+  
+  .subheading {
+  
+  font-size: 1.75rem;
+  
+  max-width: 50ch;
+  
+  }
+  
+  
+  /* label {
+  
+  display :inline-block;
+  
+  text-align :left;
+  
+  width :160px;
+  
+  margin-top:-50px;
+  
+  margin-bottom: -50px;
+  
+  box-sizing: border-box;
+  
+  
+  } */
+  
+  
+  /* input[type=text,email,tel] {
+  
+  
+  display: inline-block;
+  
+  border-radius: 4px;
+  
+  border:0.5px;
+  
+  width:100px ;
+  
+  padding :10px ;
+  
+  margin:1px ;
+  
+  margin-left: -80px; */
+  
+  
+  /* }
+  
+  input[type=submit] {
+  
+  display: inline-block;
+  
+  border-radius: 4px;
+  
+  border:0.5px;
+  
+  background: burlywood;
+  
+  
+  width:90px ;
+  
+  
+  margin:5px ;
+  
+  */
+  
+  }
+  
+  
+  /*
+  
+  
+  /*
+  
+  
+  */
